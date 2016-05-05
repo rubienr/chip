@@ -139,3 +139,4 @@ function main() {
 
 # start monitoring in subshell and nonblocking
 $(main)&
+exit 0
