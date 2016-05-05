@@ -44,3 +44,6 @@ The shutdown GPIO pin is adjustable using:
         # see http://docs.getchip.com/#how-you-see-gpio
         POWER_BUTTON_GPIO_NUMBER="414"
         POWER_BUTTON_GPIO="/sys/class/gpio/gpio$POWER_BUTTON_GPIO_NUMBER"
+
+## Screenshots
+![GPIO switch](https://raw.githubusercontent.com/rubienr/chip/master/screenshots/switch.jpg)
