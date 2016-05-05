@@ -1,9 +1,9 @@
+#!/bin/bash/
 #
 # @author Raoul R., 2016
 #
 # This script watches (polls) the battery state and the gpio $POWER_BUTTON_GPIO pin level. 
 # If pin is pulled to GND the script initiates a shut down.
-#
 #
 
 # SHUTDOWN_MIN_BATTERY_VOLTAGE ... [mV]
@@ -137,4 +137,5 @@ function main() {
   done
 }
 
-main
+# start monitoring in subshell and nonblocking
+$(main)&
