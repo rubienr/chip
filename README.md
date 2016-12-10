@@ -6,12 +6,14 @@ This script monitors the battery voltage, battery charge current and a GPIO pin.
 
 ## Installation
 
-1. clone repository
+1. **clone** repository to your C.H.I.P. device
 
+        # If not changed: default username "chip" and password "chip".
+        ssh chip@<your-device>
         cd
         git clone https://github.com/rubienr/chip.git
 
-2. start it from **/etc/rc.local**
+2. automatically **start** it from **/etc/rc.local**
 
         #!/bin/sh -e
         #
@@ -32,7 +34,7 @@ This script monitors the battery voltage, battery charge current and a GPIO pin.
         exit 0
 
 ## Adjustment
-The battery low voltage and current levels are adjustable using:
+The battery low **voltage** and **current levels** are adjustable using:
 
         # SHUTDOWN_MIN_BATTERY_VOLTAGE ... [mV]
         SHUTDOWN_MIN_BATTERY_VOLTAGE=2100.0
